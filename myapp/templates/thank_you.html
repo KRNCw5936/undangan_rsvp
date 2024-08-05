@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f4f4f4;
+            background-color: #000;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #ffdf00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terima Kasih!</h1>
+    <p>Terima kasih, {{ name }}. Kami telah menerima RSVP Anda.</p>
+    <p>Anda akan menerima konfirmasi di email: {{ email }}</p>
+    <p>Status Kehadiran Anda: {{ attending }}</p>
+    <a href="/">Kembali ke Beranda</a>
+</body>
+</html>
